@@ -38,7 +38,17 @@
     color: var(--green-dark);
     margin: 0;
   }
-  .updated { color: var(--gold); font-size: 0.9rem; font-weight: 600; margin-bottom: 22px; }
+  .updated { color: var(--gold); font-size: 0.9rem; font-weight: 600; margin-bottom: 16px; }
+  .note {
+    background: var(--terracotta);
+    color: white;
+    font-size: 1.15rem;
+    font-weight: 700;
+    padding: 12px 18px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 6px rgba(42,56,36,0.15);
+  }
   .columns { display: flex; gap: 20px; flex-wrap: wrap; align-items: flex-start; }
   .column { flex: 1 1 340px; min-width: 0; }
   h2 {
@@ -103,7 +113,8 @@
     <img src="logo.svg" alt="Honigbrot">
     <h1>Dashboard</h1>
   </div>
-  <div class="updated">Stand: 27.07.2026 22:08 Uhr</div>
+  <div class="updated">Stand: 27.07.2026 22:20 Uhr</div>
+  <div class="note">📌 Testnachricht - kann geloescht werden</div>
   <div class="columns">
     <div class="column">
       <h2>Heute</h2>
