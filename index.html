@@ -115,7 +115,7 @@
     <img src="logo.svg" alt="Honigbrot">
     <h1>Dashboard</h1>
   </div>
-  <div class="updated">Stand: 01.09.2026 17:28 Uhr</div>
+  <div class="updated">Stand: 02.09.2026 11:38 Uhr</div>
   
   <div class="columns">
     <div class="column">
@@ -132,41 +132,19 @@
       <div class="event-detail">👥 ca. 50 Personen Personen</div>
       <div class="event-detail">🎉 Eiswagen fuer Gartenfeier, 1-2 Std. Standzeit, evtl. Honigtorte (Rueckfrage bei Konditorin Aline lief noch)</div>
     </div>
+    <div class="event-card">
+      <div class="event-header">
+        <span class="event-time">Mo 07.09. 15:30–17:30</span>
+        <span class="event-status" style="background:#B38952">Angefragt</span>
+      </div>
+      <div class="event-title">DEHOGA Brandenburg - Willkommens-Tag</div>
+      <div class="event-detail">💶 Anzahlung: nein</div>
+      
+    </div>
     </div>
     <div class="column">
       <h2>Team heute</h2>
-      
-    <div class="timeline">
-      <div class="timeline-axis"><div class="timeline-hour" style="left:0.00%"><span class="timeline-hour-label">08</span></div><div class="timeline-hour" style="left:8.33%"><span class="timeline-hour-label">09</span></div><div class="timeline-hour" style="left:16.67%"><span class="timeline-hour-label">10</span></div><div class="timeline-hour" style="left:25.00%"><span class="timeline-hour-label">11</span></div><div class="timeline-hour" style="left:33.33%"><span class="timeline-hour-label">12</span></div><div class="timeline-hour" style="left:41.67%"><span class="timeline-hour-label">13</span></div><div class="timeline-hour" style="left:50.00%"><span class="timeline-hour-label">14</span></div><div class="timeline-hour" style="left:58.33%"><span class="timeline-hour-label">15</span></div><div class="timeline-hour" style="left:66.67%"><span class="timeline-hour-label">16</span></div><div class="timeline-hour" style="left:75.00%"><span class="timeline-hour-label">17</span></div><div class="timeline-hour" style="left:83.33%"><span class="timeline-hour-label">18</span></div><div class="timeline-hour" style="left:91.67%"><span class="timeline-hour-label">19</span></div><div class="timeline-hour" style="left:100.00%"><span class="timeline-hour-label">20</span></div></div>
-      <div class="timeline-lanes" data-axis-start="480" data-axis-end="1200" style="height:124px">
-        <div class="timeline-bar timeline-bar-kitchen" style="left:0.00%; width:58.33%; top:0px; height:36px"><span class="timeline-bar-name">Miriam</span><span class="timeline-bar-time">08:00–15:00 · Küche</span></div><div class="timeline-bar " style="left:4.17%; width:70.83%; top:44px; height:36px"><span class="timeline-bar-name">Mio</span><span class="timeline-bar-time">08:30–17:00</span></div><div class="timeline-bar " style="left:4.17%; width:41.67%; top:88px; height:36px"><span class="timeline-bar-name">Stina</span><span class="timeline-bar-time">08:30–13:30</span></div><div class="timeline-bar " style="left:45.83%; width:50.00%; top:88px; height:36px"><span class="timeline-bar-name">Linus</span><span class="timeline-bar-time">13:30–19:30</span></div>
-        <div class="timeline-now" id="timeline-now" style="display:none; height:124px">
-          <span class="timeline-now-label">jetzt</span>
-        </div>
-      </div>
-    </div>
-    <script>
-    (function() {
-      var container = document.currentScript.previousElementSibling;
-      var lanes = container.querySelector('.timeline-lanes');
-      var marker = lanes.querySelector('#timeline-now');
-      var axisStart = parseInt(lanes.dataset.axisStart, 10);
-      var axisEnd = parseInt(lanes.dataset.axisEnd, 10);
-      function update() {
-        var now = new Date();
-        var minutes = now.getHours() * 60 + now.getMinutes();
-        if (minutes >= axisStart && minutes <= axisEnd) {
-          var pct = (minutes - axisStart) / (axisEnd - axisStart) * 100;
-          marker.style.left = pct.toFixed(2) + '%';
-          marker.style.display = '';
-        } else {
-          marker.style.display = 'none';
-        }
-      }
-      update();
-      setInterval(update, 60000);
-    })();
-    </script>
+      <div class="empty">Keine Schichten eingetragen.</div>
     </div>
   </div>
 </body>
